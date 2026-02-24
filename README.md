@@ -11,27 +11,27 @@ Site web responsive d'un restaurant de sushis, construit avec **Next.js 14**, **
 
 ## Aperçu
 
-Site vitrine d'un restaurant japonais fictif situé à Paris. Il présente le menu, les plats populaires, les nouveautés et une newsletter. Le design est responsive, animé et dispose d'un mode sombre.
+Site vitrine d'un restaurant japonais fictif situé à Paris. Il présente le menu, les plats populaires, les nouveautés et une newsletter. Le design est entièrement responsive, animé et propose un mode sombre.
 
 ---
 
 ## Fonctionnalités
 
 - **Mode sombre / clair** — basculement avec persistance via `localStorage`
-- **Animations fluides** — entrées et transitions avec Framer Motion
-- **Navigation active** — section mise en évidence selon le scroll
-- **Design responsive** — adapté mobile, tablette et desktop
-- **Bouton retour en haut** — apparaît après 350px de défilement
-- **Formulaire newsletter** — champ d'abonnement par e-mail
+- **Animations fluides** — entrées et transitions animées avec Framer Motion
+- **Navigation active** — section mise en évidence selon la position de défilement
+- **Design responsive** — adapté mobile, tablette et ordinateur de bureau
+- **Bouton retour en haut** — apparaît après 350 px de défilement
+- **Formulaire d'abonnement** — champ de saisie pour la newsletter
 
 ---
 
-## Stack technique
+## Technologies utilisées
 
-| Technologie   | Version | Usage                         |
+| Technologie   | Version | Utilisation                   |
 | ------------- | ------- | ----------------------------- |
-| Next.js       | 14.2.5  | Framework (App Router)        |
-| React         | 18      | Bibliothèque UI               |
+| Next.js       | 14.2.5  | Cadriciel (routeur applicatif)|
+| React         | 18      | Bibliothèque d'interface      |
 | TypeScript    | 5       | Typage statique               |
 | Framer Motion | 11      | Animations                    |
 | CSS3          | —       | Styles personnalisés          |
@@ -46,16 +46,16 @@ Site vitrine d'un restaurant japonais fictif situé à Paris. Il présente le me
 sushi-nextjs/
 ├── src/
 │   ├── app/
-│   │   ├── layout.tsx       # Layout racine (métadonnées, fonts)
+│   │   ├── layout.tsx       # Mise en page racine (métadonnées, polices)
 │   │   ├── page.tsx         # Page principale
-│   │   └── globals.css      # Styles globaux + variables CSS
+│   │   └── globals.css      # Styles globaux et variables CSS
 │   ├── components/
-│   │   ├── Header.tsx       # Barre de navigation + toggle thème
-│   │   ├── Home.tsx         # Section hero
+│   │   ├── Header.tsx       # Barre de navigation et bascule de thème
+│   │   ├── Home.tsx         # Section héros
 │   │   ├── About.tsx        # Section À propos
 │   │   ├── Popular.tsx      # Plats populaires (3 cartes produit)
-│   │   ├── Recently.tsx     # Nouveautés
-│   │   ├── Newsletter.tsx   # Abonnement e-mail
+│   │   ├── Recently.tsx     # Section Nouveautés
+│   │   ├── Newsletter.tsx   # Abonnement par e-mail
 │   │   ├── Footer.tsx       # Pied de page
 │   │   └── ScrollUp.tsx     # Bouton retour en haut
 │   └── types/
@@ -75,7 +75,7 @@ sushi-nextjs/
 
 ```bash
 # Cloner le dépôt
-git clone <url-du-repo>
+git clone <url-du-dépôt>
 cd sushi-nextjs
 
 # Installer les dépendances
@@ -89,28 +89,28 @@ Ouvrir [http://localhost:3000](http://localhost:3000) dans le navigateur.
 
 ---
 
-## Scripts disponibles
+## Commandes disponibles
 
 ```bash
 pnpm dev      # Serveur de développement
-pnpm build    # Build de production
+pnpm build    # Compilation pour la production
 pnpm start    # Serveur de production
-pnpm lint     # Vérification ESLint
+pnpm lint     # Vérification du code avec ESLint
 ```
 
 ---
 
 ## Sections du site
 
-| Section        | Description                                    |
-| -------------- | ---------------------------------------------- |
-| **Header**     | Logo, navigation, toggle dark mode             |
-| **Hero**       | Titre principal, appel à l'action, image sushi |
-| **À Propos**   | Histoire et valeurs du restaurant              |
-| **Populaire**  | Onigiri, Rouleaux de Printemps, Sushi Rolls    |
-| **Nouveautés** | Sushi Samourai — Saumon Fromage                |
-| **Newsletter** | Formulaire d'abonnement                        |
-| **Footer**     | Liens, adresse, horaires, réseaux sociaux      |
+| Section          | Description                                        |
+| ---------------- | -------------------------------------------------- |
+| **En-tête**      | Logo, navigation, bascule du thème                 |
+| **Héros**        | Titre principal, bouton d'appel à l'action, image  |
+| **À Propos**     | Histoire et valeurs du restaurant                  |
+| **Populaires**   | Onigiri, Rouleaux de Printemps, Sushi Rolls        |
+| **Nouveautés**   | Sushi Samourai — Saumon Fromage                    |
+| **Newsletter**   | Formulaire d'abonnement par e-mail                 |
+| **Pied de page** | Liens, adresse, horaires, réseaux sociaux          |
 
 ---
 
@@ -122,4 +122,11 @@ Le projet est prêt pour un déploiement sur [Vercel](https://vercel.com) :
 pnpm build
 ```
 
-> **Note :** L'optimisation d'images Next.js est désactivée (`unoptimized: true`) pour la compatibilité avec les exports statiques.
+> **Remarque :** L'optimisation d'images intégrée à Next.js est désactivée (`unoptimized: true`) pour assurer la compatibilité avec les exports statiques.
+
+---
+
+## Crédits
+
+- Design original : [Bedimcode](https://github.com/bedimcode)
+- Migration Next.js / TypeScript : développement personnalisé
