@@ -42,7 +42,7 @@ Site vitrine d'un restaurant japonais fictif situé à Paris. Il présente le me
 
 ## Structure du projet
 
-```
+```text
 sushi-nextjs/
 ├── src/
 │   ├── app/
